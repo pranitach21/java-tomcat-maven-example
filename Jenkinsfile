@@ -7,8 +7,8 @@ pipeline {
                          steps {
                                 git branch : master,
                                 credentialsId: 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,
-                                url: https://github.com/pranitach21/java-tomcat-maven-example.git ,
-                               }
+                                url: https://github.com/pranitach21/java-tomcat-maven-example.git 
+                                  }
                         }
                  stage ( 'Build' )
                        {
