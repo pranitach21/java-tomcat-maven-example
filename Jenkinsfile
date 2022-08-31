@@ -16,7 +16,7 @@ pipeline {
                                 sh 'mvn -B -DskipTests clean package'
                               }
                        }
-                stage ( 'Deploy’)
+                stage ('Deploy')
                        {
                         steps {
                              sh 'cp -ivr /opt/tomcat/.jenkins/workspace/project_java_16/target/java-tomcat-maven-example.war  /opt/tomcat/webapps'
