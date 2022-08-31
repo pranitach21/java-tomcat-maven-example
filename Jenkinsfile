@@ -2,12 +2,12 @@ pipeline {
   agent any {
           tools { maven “MAVEN_HOME” }
           stages {
-                  stage ( ‘GitRepo’ )
+                  stage ( ‘Git’ )
                         {
                          steps {
                                 git branch : master,
-                                credentialsId: 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,
-                                url: https://github.com/pranitach21/java-tomcat-maven-example.git 
+                                credentialsId: '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'
+                                url: 'https://github.com/pranitach21/java-tomcat-maven-example.git '
                                   }
                         }
                  stage ( 'Build' )
